@@ -1,18 +1,10 @@
+import math
 
-class Shape:
-    def draw(self):
-        print("Drawing a Shape")
+def circle_area(r):
+    return math.pi * r * r
 
-class Circle(Shape):
-    def draw(self):
-        print("Drawing a Circle")
+def rectangle_area(l, w):
+    return l * w
 
-class Rectangle(Shape):
-    def draw(self):
-        print("Drawing a Rectangle")
-
-s1 = Circle()
-s2 = Rectangle()
-
-s1.draw()
-s2.draw()
+def triangle_area(b, h):
+    return 0.5 * b * h
